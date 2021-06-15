@@ -15,14 +15,21 @@ def valid_parentheses(string):
             pass
 
     if new_list == []:
+        print("True here")
         return True
-    elif bracket_care_list[0] == ")":
-        return False
-    elif bracket_care_list[-1] == "(":
-        return False
     elif bracket_care_list[0::2][:] == ")" and bracket_care_list[1::2][:] == "(":
+        print(bracket_care_list)
+        print(bracket_care_list[::2][:])
+        print(bracket_care_list[1::2][:])
+        print(False)
         return False
     elif open_bracket_count == closed_bracket_count:
+        print("True there")
         return True
-    else:
-        return False
+    # else:
+    #     print(False)
+    #     return False
+
+
+
+valid_parentheses("hi(hi)()")
