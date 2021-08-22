@@ -18,7 +18,7 @@ def pig_it(text):
             for i in range(len(words)):
                 words[i] = words[i][1:] + words[i][0] + 'ay'
                 final_two = ' '.join(words)
-            print(final_two1)
+            print(final_two)
         # elif char == words[-1]:
         #     print(words)
 

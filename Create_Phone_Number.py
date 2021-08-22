@@ -8,10 +8,10 @@ def create_phone_number(n):
     p1.insert(4,")")
     p2.insert(3,"-")
     joined_list = p1 + p2
-    print(joined_list)
     joined_list.insert(5," ")
     returned_number = ''.join(str(i) for i in joined_list)
     print(returned_number)
+    return returned_number
 
 
 create_phone_number([1, 2, 3, 4, 5, 6, 7, 8, 9, 0])
